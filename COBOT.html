@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>COBOT- CHATBOT FOR COVID19 QUERIES</title>
+</head>
+<body>
+<h1><center>COBOT- ULTIMATE SOLUTION FOR YOUR COVID19 QUERIES</center></h1>
+<h2><center>Developed by Abhishek Jaiswal</center></h2>
+<img src="C:\Users\acer\Downloads\1_DhK4Pq6m2VezX1FtFIt_Jw (1).png" >
+<div id="webchat"></div>
+<script src="https://cdn.jsdelivr.net/npm/rasa-webchat/lib/index.min.js"></script>
+<script>
+  WebChat.default.init({
+    selector: "#webchat",
+    initPayload: "/get_started",
+    customData: {"language": "en"}, // arbitrary custom data. Stay minimal as this will be added to the socket
+    socketUrl: "http://localhost:5005",
+    socketPath: "/socket.io/",
+    title: "COBOT",
+    subtitle: "Covid Chatbot",
+    params: {"storage": "session"} // can be set to "local"  or "session". details in storage section.
+  })
+</script>
+</body>
+</html>

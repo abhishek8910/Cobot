@@ -1,0 +1,72 @@
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - AskAboutCovid
+  - Symptoms
+  - Spread
+  - Prevention
+  - avoidcorona
+  - travel
+  - mask
+
+responses:
+  utter_greet:
+  - text: "Greetings of the day Master Abhishek"
+  utter_mask:
+  - text: "The CDC and WHO recommend that people wear cloth face coverings in public when social distancing is difficult. This advice is based on evidence that people with COVID-19 can transmit the virus before they realize they have it.
+    Using masks in public may help reduce the spread from people who don't have symptoms. Non-medical cloth masks are recommended for the public. Surgical masks and N-95 respirators are in short supply and should be reserved for health care providers."
+  utter_travel:
+  - text: "If you're planning to travel, first check for travel advisories. You also may want to talk with your doctor if you have health conditions that make you more susceptible to respiratory infections and complications."
+
+  utter_corona:
+  - text: "Coronaviruses are a large family of viruses which may cause illness in animals or humans.  In humans, several coronaviruses are known to cause respiratory infections ranging from the common cold to more severe diseases such as Middle East Respiratory Syndrome (MERS) and Severe Acute Respiratory Syndrome (SARS). The most recently discovered coronavirus causes coronavirus disease COVID-19"
+
+  utter_symptoms:
+  - text: "The most common symptoms of COVID-19 are fever, dry cough, and tiredness. Other symptoms that are less common and may affect some patients include aches and pains, nasal congestion, headache, conjunctivitis, sore throat, diarrhea, loss of taste or smell or a rash on skin or discoloration of fingers or toes. These symptoms are usually mild and begin gradually. Some people become infected but only have very mild symptoms.Most people (about 80%) recover from the disease without need of hospital"
+
+  utter_spread:
+  - text: "Data has shown that it spreads from person to person among those in close contact (within about 6 feet, or 2 meters). The virus spreads by respiratory droplets released when someone infected with the virus coughs, sneezes or talks."
+  utter_prevention:
+  - text: "A vaccine isn't currently available to prevent COVID-19.
+    If you have been in close contact with someone with COVID-19, you may be infected.
+    Close contact means that you live with or have been in settings of less than 1 metre from those who have the disease. In these cases, it is best to stay at home.
+    However, if you live in an area with malaria or dengue fever it is important that you do not ignore symptoms of fever. Seek medical help. When you attend the health facility wear a mask if possible, keep at least 1 metre distant from other people and do not touch surfaces with your hands. If it is a child who is sick help the child stick to this advice.
+    -If you do not live in an area with malaria or dengue fever please do the following:
+    -If you become ill, even with very mild symptoms you must self-isolate
+    -Even if you don’t think you have been exposed to COVID-19 but develop symptoms, then self-isolate and monitor yourself
+    -You are more likely to infect others in the early stages of the disease when you just have mild symptoms, therefore early self-isolation is very important.
+    -If you do not have symptoms, but have been exposed to an infected person, self-quarantine for 14 days.
+    -If you have definitely had COVID-19 (confirmed by a test) self-isolate for 14 days even after symptoms have disappeared as a precautionary measure – it is not yet known exactly how long people remain infectious after they have recovered. Follow national advice on self-isolation."
+  utter_avoidcorona:
+  - text: "The best way to prevent illness is to avoid being exposed to the virus. The CDC and WHO recommend following these precautions:
+
+          -Keep 6 feet (2 meters) of distance between yourself and people outside your household.
+          -Wash your hands often with soap and water for at least 20 seconds, or use an alcohol-based hand sanitizer that contains at least 60% alcohol.
+          -Cover your mouth and nose with your elbow or a tissue when you cough or sneeze. Throw away the used tissue.
+          -Avoid touching your eyes, nose and mouth.
+          -Clean and disinfect surfaces you often touch on a daily basis."
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
